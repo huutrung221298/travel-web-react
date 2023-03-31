@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/travel-web-react' exact element={<Home />} />
+          <Route path='/' exact element={<Home />} />
           <Route path='/travel-web-react/#/services' exact element={<Service />} />
           <Route path='/#/products' exact element={<Product />} />
           <Route path='/#/sign-up' exact element={<SignUp />} />
