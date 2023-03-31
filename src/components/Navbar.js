@@ -45,7 +45,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a href="/travel-web-react/#/services" className="nav-links" onClick={closeMobileMenu}>
+              <a href="/services" className="nav-links" onClick={closeMobileMenu}>
                 Services
               </a>
             </li>
