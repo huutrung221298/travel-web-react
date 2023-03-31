@@ -14,9 +14,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home />} />
-          <Route path='/travel-web-react/#/services' exact element={<Service />} />
-          <Route path='/#/products' exact element={<Product />} />
-          <Route path='/#/sign-up' exact element={<SignUp />} />
+          <Route path='/services' exact element={<Service />} />
+          <Route path='/products' exact element={<Product />} />
+          <Route path='/sign-up' exact element={<SignUp />} />
         </Routes>
       </Router>
     </div>
