@@ -10,7 +10,7 @@ import SignUp from './components/pages/SignUp.js'
 function App() {
   return (
     <div>
-      <Router basename='travel-web-react'>
+      <Router basename='/travel-web-react'>
         <Navbar />
         <Routes>
           <Route path='/travel-web-react' exact element={<Home />} />
