@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Button } from './Button';
+import { Link } from 'react-router-dom';
 import './Button.css'
 import './Navbar.css'
 
@@ -31,33 +32,33 @@ function Navbar() {
     
       <div className="navbar">
         <div className="navbar-container">
-          <a href="/" className='logo' onClick={closeMobileMenu}>
+          <Link to='/' className='logo' onClick={closeMobileMenu}>
             TRVL <i className="fa-brands fa-typo3" />
-          </a>
+          </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fa-solid fa-x' : 'fa-solid fa-bars'} />
           </div>
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
-              <a href="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/services" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
                 Services
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/products" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/products" className="nav-links" onClick={closeMobileMenu}>
                 Products
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
+              <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
                 Sign up
-              </a>
+              </Link>
             </li>
           </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
